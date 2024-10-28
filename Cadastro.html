@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Streaming Service</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="img/fundo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <main>
+            <h2 onclick="location.href = 'index.html'">Criar Conta</h2>
+            <form id="signup-form">
+                <label for="Nome">Nome completo:</label>
+                <input type="text" id="nome" name="name" required>
+                <br> 
+                <label for="Data">Data de nascimento:</label>
+                <input type="text" id="data" name="data" required> 
+                <br>
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="Número">Número de telefone:</label>
+                <input type="number" id="number" name="number" required>
+                <br>
+                <label for="Endereço">Endereço:</label>
+                <input type="endereco" id="endereco" name="endereco" required >
+                <br>
+                <div class="form-group">
+                    </select>
+                    <div>
+                        <br>
+                    <label for="termos">Aceito Termos e Condições:</label>
+                    <select name="termos" id="termos">
+                    <option value="Aceito">Aceito</option>
+                    <option value="Não aceito">Não Aceito</option>
+                    </select>
+                    </div>
+                    <br>
+                </div>
+                <label for="password"> Crie sua senha:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div id="message"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
